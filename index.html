@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PORTFOLIO Oscar Javier Moreno Orozco</title>
+</head>
+<body>
+
+    <!-- Sección Cabecera -->
+    <header>
+        <nav class="nav">
+
+            <p class="nav__text">Oscar Javier M.</p>
+
+            <input type="checkbox" id="open-menu" class="nav__checkbox">
+            <label for="open-menu" class="nav__toggle"></label>
+
+            <ul class="nav__options">
+                <li><a class="nav__link" href="#">Acerca</a></li>
+                <li><a class="nav__link" href="#portfolio">Portafolio</a></li>
+                <li><a class="nav__link" href="#contact">Contacto</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <!-- Sección Información -->
+    <main class="profile">
+
+        <section class="profile__wrapper">
+
+            <!-- Imagen de portada -->
+            <div class="profile__img-container">
+                <img class="profile__img" src="Imagenes/Perfil.jpg" alt="Imagen de portada">
+            </div>
+
+
+            <!-- Descripcion y habilidades -->
+            <div class="profile__data-container">
+
+                <div class="profile__data">
+
+                    <!-- Descripcion -->
+                    <div class="profile__description">
+                        <h1>¿QUIEN ES: Oscar Javier Moreno?</h1>
+
+                        <p class="profile__text">Apasionado por la tecnología y la lógica de programación. Desarrollador Junior con bases sólidas en Java y desarrollo Frontend/Backend. Mi objetivo es crear experiencias web increíbles mediante código eficiente, diseño responsive y aprendizaje constante.</p>
+                    </div>
+
+                    <!-- Habilidades -->
+                    <div class="profile__skills-container">
+                        <h2>HABILIDADES</h2>
+
+                        <ul class="profile__skills-list">
+
+                            <!-- Habilidad HTML -->
+                            <li class="profile__skill">
+                                <div class="profile__load-bar">
+                                    <div class="profile__load-bar__bar"
+                                    style="--porcent: 80%">80%</div>
+                                </div>
+                                <span class="profile__skill-name">HTML</span>
+                            </li>
+
+                            <!-- Habilidad CSS -->
+                            <li class="profile__skill">
+                                <div class="profile__load-bar">
+                                    <div class="profile__load-bar__bar"
+                                    style="--porcent: 90%">90%</div>
+                                </div>
+                                <span class="profile__skill-name">CSS</span>
+                            </li>
+
+                            <!-- Habilidad JS -->
+                            <li class="profile__skill">
+                                <div class="profile__load-bar">
+                                    <div class="profile__load-bar__bar"
+                                    style="--porcent: 60%">60%</div>
+                                </div>
+                                <span class="profile__skill-name">JS</span>
+                            </li>
+
+                            <!-- Habilidad C++ -->
+                            <li class="profile__skill">
+                                <div class="profile__load-bar">
+                                    <div class="profile__load-bar__bar"
+                                    style="--porcent: 70%">70%</div>
+                                </div>
+                                <span class="profile__skill-name">C++</span>
+                            </li>
+
+                            <!-- Habilidad Java -->
+                            <li class="profile__skill">
+                                <div class="profile__load-bar">
+                                    <div class="profile__load-bar__bar"
+                                    style="--porcent: 90%">90%</div>
+                                </div>
+                                <span class="profile__skill-name">Java</span>
+                            </li>
+
+                            <!-- Habilidad C# -->
+                            <li class="profile__skill">
+                                <div class="profile__load-bar">
+                                    <div class="profile__load-bar__bar"
+                                    style="--porcent: 50%">50%</div>
+                                </div>
+                                <span class="profile__skill-name">C#</span>
+                            </li>
+
+                            <!-- Habilidad SQL -->
+                            <li class="profile__skill">
+                                <div class="profile__load-bar">
+                                    <div class="profile__load-bar__bar"
+                                    style="--porcent: 60%">60%</div>
+                                </div>
+                                <span class="profile__skill-name">SQL</span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Sección Portafolio -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">PORTAFOLIO</h2>
+
+        <!-- Portafolio -->
+        <div class="portfolio__project-container">
+
+            <!-- Proyecto #1 -->
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project #1</h2>
+            </div>
+
+            <!-- Proyecto #2 -->
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project #2</h2>
+            </div>
+
+            <!-- Proyecto #3 -->
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project #3</h2>
+            </div>
+
+            <!-- Proyecto #4 -->
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project #4</h2>
+            </div>
+
+            <!-- Proyecto #5 -->
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project #5</h2>
+            </div>
+
+            <!-- Proyecto #6 -->
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project #6</h2>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección formulario -->
+    <aside class="contact" id="contact">
+        <h2 class="contact__title">CONTACTO</h2>
+
+        <form class="form" action="">
+
+            <!-- Nombre -->
+            <div class="form__field">
+                <label class="form__label" for="name">Nombre</label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Nombre de ejemplo">
+            </div>
+
+            <!-- Apellido -->
+            <div class="form__field">
+                <label class="form__label" for="last-name">Apellido</label>
+                <input class="form__input" type="text" name="last-name" id="last-name" placeholder="Apellido de ejemplo">
+            </div>
+
+            <!-- Correo -->
+            <div class="form__field">
+                <label class="form__label" for="e-mail">Correo</label>
+                <input class="form__input" type="text" name="e-mail" id="e-mail" placeholder="ejemplo@gmail.com">
+            </div>
+
+            <!-- Correo -->
+            <div class="form__field">
+                <label class="form__label" for="message">Mensaje</label>
+                <textarea class="form__input input--rezise" rows="7" name="message" id="message" placeholder="Tu mensaje"></textarea>
+            </div>
+
+            <input class="form__input input--submit" type="submit">
+        </form>
+
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>@ Portafolio 2026 - Oscar Javier Moreno Orozco</p>
+    </footer>    
+    
+</body>
+</html>

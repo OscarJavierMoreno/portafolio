@@ -1,0 +1,498 @@
+:root {
+    --box-shadow: 0 0 10px 0 #000000;
+    --border-radius: 10px;
+    --margin-top: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #e3e3e3;
+    color: #1d1d1d;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100vh;
+}
+
+
+/* ---- NAV BAR ---- */
+.nav {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    border-radius: 0 0 10px 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.nav__text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav__checkbox {
+    display: none;
+}
+
+.nav__toggle::before {
+    content: "☰";
+    font-size: 2rem;
+    font-weight: 900;
+    position: relative;
+}
+
+.nav__toggle:hover {
+    cursor: pointer;
+}
+
+.nav__options {
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    background-color: #fffffff8;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav__link {
+    font-size: 1.5rem;
+    color: inherit;
+}
+
+.nav__link:not(:hover) {
+    text-decoration: none;
+}
+
+.nav__checkbox:checked ~ .nav__options {
+    display: flex;
+}
+
+.nav__checkbox:checked + .nav__toggle::before {
+    z-index: 1;
+    content: "X";
+}
+
+
+/* ---- PROFILE ---- */
+.profile {
+    margin: auto;
+    margin-top: 110px;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: var(--border-radius); 
+    box-shadow: var(--box-shadow); 
+    padding: 10px;
+
+    animation: fade 2s;
+}
+
+.profile__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+} 
+
+
+/* Information */
+.profile__img-container {
+    max-height: 400px;   
+    overflow: hidden;
+}
+
+.profile__img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.profile__data-container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.profile__text {
+    font-size: 1.35rem;
+    margin-top: 10px;
+    text-align: center;
+    text-wrap: pretty;
+}
+
+/* Skills */
+.profile__skills-container {
+    margin-top: 30px;
+}
+
+.profile__skills-list {
+    margin-top: 10px;
+}
+
+.profile__skill {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.profile__load-bar {
+    width: 80%;    
+    border-radius: 8px;
+    color: #e3e3e3;
+    padding: 4px;   
+    box-shadow: 2px 2px 10px 0 #000000;
+}
+
+.profile__load-bar__bar {
+    background-color: #2d2d2d;
+    border-radius: 5px;
+    padding: 6px 12px;  
+    font-size: 1.2rem;
+    width: var(--porcent);
+}
+
+.profile__skill-name {
+    width: 20%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/* ---- PORTFOLIO ---- */
+.portfolio {
+    margin-top: var(--margin-top);
+    background-color: #262626;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    color: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center; 
+}
+
+.portfolio__title { 
+    margin-top: var(--margin-top);   
+    font-size: 2.5rem;
+}
+
+.portfolio__project-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    max-width: 1400px;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.portfolio__project {
+    background-image: linear-gradient(#00000095, #00000095), 
+        url("Portafolio/Imagen1.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 2px 2px 5px 2px #000000;
+    display: grid;
+    place-content: center;  
+    
+    /* Agregando la animación al portafolio en base a la vista del contenedor */
+    animation: fade both;
+    animation-timeline: view();
+    animation-range: cover 10% cover 100%; 
+}
+
+.portfolio__project:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: 3px solid #fff;
+}
+
+
+/* ---- CONTACT ---- */
+.contact {
+    background-color: #fff;
+    margin: auto;
+    margin-top: var(--margin-top);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: var(--box-shadow); 
+    margin-bottom: 30px; 
+    
+    animation: fade both;
+    animation-timeline: view();
+    animation-range: cover 10% contain 100%;    
+}
+
+.contact__title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+/* Formulario */
+.form {
+    margin-top: var(--margin-top);
+    display: grid;        
+}
+
+.form__field {
+    margin-top: var(--margin-top);
+}
+
+.form__label {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    padding-left: 7px;
+}
+
+.form__input {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    border-radius: 7px;
+    box-shadow: 2px 3px 10px 0 #000000;
+    border: none;
+    border-bottom: 5px solid #000000;
+    font-family: inherit;    
+}
+
+.input--rezise {
+    resize: none;
+}
+
+.input--submit {
+    margin-top: var(--margin-top);
+    background-color: #1d1d1d;
+    border: 3px solid #000000;
+    color: #e3e3e3;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.input--submit:hover {
+    background-color: #e7e7e7;
+    color: #292929;
+    cursor: pointer;
+}
+
+
+/* ---- FOOTER ---- */
+footer {
+    margin-top: auto;
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: var(--box-shadow);
+}
+
+footer p {
+    text-align: center;
+    color: #e7e7e7;
+    font-size: 1.5rem;
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+/* funcionamiento de la barra de nnavegación */
+@media screen and (min-width: 600px) {
+    .nav {
+        animation: header-movement linear both;
+        animation-timeline: scroll();
+
+        /* Haciendo que cuando el scroll esté en 10px arranque y que cuando esté en 150px finalice */
+        animation-range: 10px 150px;
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__options {
+        width: initial;
+        height: initial;
+        position: static;
+        display: flex;
+        flex-direction: row;
+        gap: 10px; 
+        background-color: initial;       
+    }  
+
+    .nav__link {
+        padding: 15px 25px;
+        border-radius: var(--border-radius);
+        text-decoration: none;
+        transition: background-color 0.5s, box-shadow 0.5s;
+    }
+
+    .nav__link:hover {
+        background-color: #202020;
+        box-shadow: var(--box-shadow);
+        color: #eaeaea;                
+    }
+}
+
+/* Funcionamiento pasando a dos culumnas */
+@media screen and (min-width: 650px) {
+    .profile {
+        box-shadow: var(--box-shadow);
+    }
+
+    .profile__wrapper {
+        flex-direction: row;
+    }
+
+    .profile__img-container {
+        flex: 1 1 300px;
+        max-height: initial;
+    }
+
+    .profile__img {
+        border-radius: 10px 0 0 10px;
+        height: 100%;
+        object-fit: cover;
+    } 
+
+    .profile__data-container {
+        flex: 1 1 400px;
+        background-color: #fff;
+        border-radius: 0 10px 10px 0;
+    }
+    
+    h1, .profile__text {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+}
+
+/* --- Funcionamiento de la reposición del Grid --- */
+@media screen and (min-width: 700px) {
+    .portfolio__project-container {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }   
+}
+
+@media screen and (min-width: 760px) {
+    .portfolio__project:first-child {
+        grid-column: span 2;
+    }
+
+    .portfolio__project:last-child {
+        grid-column: span 2;
+    }  
+}
+
+@media screen and (min-width: 1130px) {
+    .portfolio__project-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    } 
+
+    .portfolio__project:first-child {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .portfolio__project:last-child {
+        grid-column: span 4;
+    }  
+}
+
+@media screen and (min-width: 1368px) {
+    .portfolio__project-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    } 
+}
+
+/* Haciendo que la foto sea mas delgada despues de lo 900px */
+@media screen and (min-width: 900px) {
+    .profile__img-container {
+        flex: 1 1 200px;
+    }
+}
+
+/* Funcionamiento del formulario */
+@media screen and (min-width: 500px) {
+    .form {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "name last-name"
+        "email email"
+        "message message"
+        "button button";
+        gap: 0px 20px;
+    }
+
+    .form__field:first-child {
+        grid-area: name;
+    }
+
+    .form__field:nth-child(2) {
+        grid-area: last-name;
+    }
+
+    .form__field:nth-child(3) {
+        grid-area: email;
+    }
+
+    .form__field:nth-child(4) {
+        grid-area: message;
+    }
+
+    .input--submit {
+        grid-area: button;
+    }    
+}
+
+
+
+/* ---- ANIMATIONS ---- */
+@keyframes header-movement {
+
+    to {
+        background-color: #292929;
+        padding: 15px;
+        color: #d5d5d5;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
