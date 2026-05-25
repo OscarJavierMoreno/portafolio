@@ -1,0 +1,103 @@
+
+/* SECCION VARIABLES */
+:root {
+
+    /* --COLORES */
+    --color-1: #0f0018;
+    --color-1-tranparent: #0f0018dc;
+    --color-2: #909090;
+    --color-3: #b1007f;
+    --color-4: #ececec;
+    --color-5: #3b0158;
+    --color-6: #9200da;
+    --color-7: #0091ff;
+    --color-8: #ff00b7;
+    --color-9: #03c200;
+    --color-10: #ff6a00;
+    --color-11: #dcca00;
+    --color-12: #ff0000;
+    --color-13: #0004ff;
+
+    /* --SOMBRAS CONTENEDOR */
+    --box-shadow-neon-a: 
+        0 0 20px 0 var(--color-3),
+        inset 0 0 15px 0 var(--color-3);
+
+    --box-shadow-neon-b: 
+        0 0 20px 0 var(--color-6),
+        inset 0 0 15px 0 var(--color-6);
+
+    --box-shadow-neon-c: 
+        0 0 20px 0 var(--color-7),
+        inset 0 0 15px 0 var(--color-7);
+
+    --box-shadow-neon-d: 
+        0 0 20px 0 var(--color-9),
+        inset 0 0 15px 0 var(--color-9);
+
+    --box-shadow-neon-e: 
+        0 0 20px 0 var(--color-5),
+        inset 0 0 15px 0 var(--color-5);
+
+    --box-shadow-neon-f: 
+        0 0 20px 0 var(--color-10),
+        inset 0 0 15px 0 var(--color-10);
+
+    --box-shadow-neon-g: 
+        0 0 20px 0 var(--color-11),
+        inset 0 0 15px 0 var(--color-11);
+
+    --box-shadow-neon-h: 
+        0 0 20px 0 var(--color-12),
+        inset 0 0 15px 0 var(--color-12);
+
+    --box-shadow-neon-i: 
+        0 0 20px 0 var(--color-13),
+        inset 0 0 15px 0 var(--color-13);
+
+    --box-shadow-neon-j: 
+        0 0 20px 0 var(--color-2),
+        inset 0 0 15px 0 var(--color-2);
+
+
+
+    /* --SOMBRAS TEXTO */
+    --text-shadow-a: 0 0px 15px var(--color-3),
+                 0 0px 20px var(--color-3),
+                 0 0px 5px var(--color-3);
+
+    --text-shadow-b: 0 0px 15px var(--color-6),
+                 0 0px 20px var(--color-6),
+                 0 0px 5px var(--color-6);
+
+    --text-shadow-c: 0 0px 15px var(--color-7),
+                 0 0px 20px var(--color-7),
+                 0 0px 5px var(--color-7);
+
+    --text-shadow-d: 0 0px 15px var(--color-9),
+                 0 0px 20px var(--color-9),
+                 0 0px 5px var(--color-9);
+
+    --text-shadow-e: 0 0px 15px var(--color-10),
+                 0 0px 20px var(--color-10),
+                 0 0px 5px var(--color-10);
+
+    --text-shadow-f: 0 0px 15px var(--color-11),
+                 0 0px 20px var(--color-11),
+                 0 0px 5px var(--color-11);
+
+    --text-shadow-g: 0 0px 15px var(--color-12),
+                 0 0px 20px var(--color-12),
+                 0 0px 5px var(--color-12);
+
+    --text-shadow-h: 0 0px 15px var(--color-13),
+                 0 0px 20px var(--color-13),
+                 0 0px 5px var(--color-13);
+
+    --text-shadow-i: 0 0px 15px var(--color-2),
+                 0 0px 20px var(--color-2),
+                 0 0px 5px var(--color-2);
+
+    /* --BORDES */
+    --border-radius-a: 0 0 15px 15px;
+}

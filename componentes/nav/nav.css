@@ -1,0 +1,118 @@
+
+/* ------------------------------------ */
+/* ---- BARRA DE NAVEGACION MOBILE ---- */
+/* ------------------------------------ */
+.nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(15px);
+    align-items: center;
+    padding: 15px 20px;
+    width: 100%;
+    box-shadow: 0 0 15px 0 var(--color-6);
+    border-radius: var(--border-radius-a);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.nav__logo {
+    width: 80px;
+    filter: brightness(10) 
+            drop-shadow(0 0 5px var(--color-3))
+            drop-shadow(0 0 10px var(--color-3));
+}
+
+.nav__name-mobile {
+    font-size: 1.1rem;
+    color: var(--color-4);
+    align-self: end;
+    padding-bottom: 10px;
+    text-shadow: var(--text-shadow-a);
+}
+
+.nav__button {
+    background-color: transparent;
+    color: var(--color-4);
+    font-size: 1.5rem;
+    border: 2px solid var(--color-4);
+    padding: 5px 10px;
+    box-shadow: var(--box-shadow-neon-a);
+    border-radius: 10px;
+    margin-left: 18px;
+}
+
+
+/* -------------------------------- */
+/* ---- BARRA DE NAVEGACION PC ---- */
+/* -------------------------------- */
+.nav-pc {
+    display: none;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.nav__name-tablet {
+    display: none;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav__link {
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: background-color, box-shadow 0.5s;
+}
+
+.nav__link:hover {
+    background-color: var(--color-5);
+    box-shadow: var(--box-shadow-neon-b);
+}
+
+.nav__item {
+    color: var(--color-4);
+    font-size: 1.2rem;
+    text-shadow: var(--text-shadow-a);
+}
+
+
+/* ----------------------- */
+/* ---- MEDIA QUERIES ---- */
+/* ----------------------- */
+
+/* Mostrando nav bar de tablet */
+@media screen and (min-width: 530px) {
+    .nav-mobile {
+        justify-content: space-evenly;
+    }
+
+    .nav__name-mobile {
+        display: none;
+    }
+
+    .nav__name-tablet {
+        display: block;
+        font-size: 1.4rem;
+    }
+}
+
+/* Mostrando nav bar de escritorio */
+@media screen and (min-width: 970px) {
+    .nav-mobile {
+        display: none
+    }
+
+    .nav__logo {
+        width: 90px;
+    }
+
+    .nav-pc {
+        display: flex;
+    }
+}
+

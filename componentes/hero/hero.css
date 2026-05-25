@@ -1,0 +1,199 @@
+
+/* ====================== */
+/* ====== HERO ========== */
+/* ====================== */
+.hero {
+    background: url("../../imagenes/fondo.jpeg") center / cover fixed;
+}
+
+.hero__layout {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--color-1) 80%
+    );
+}
+
+
+/* ====== HERO IMAGE ============ */
+.hero__img-container {
+    display: grid;
+    place-items: center;
+}
+
+.hero__self-image {
+    width: 50%;
+    margin-top: 100px;
+    filter: drop-shadow(0 0 15px var(--color-6));
+}
+
+
+/* ====== HERO CONTENT ========== */
+.hero__data-container {
+    gap: 15px;
+    padding: 20px;
+}
+
+.hero__name {
+    width: 90%;
+    animation: heroNameBlink 1.5s infinite alternate;
+}
+
+.hero__title {
+    width: 80%;
+    padding: 7px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--color-2);
+    animation: neonTitleFlicker 5s infinite;
+}
+
+.hero__description {
+    width: min(90%, 420px);
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--color-4);
+    text-shadow: var(--text-shadow-b);
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+/* ====== HERO BUTTONS ========== */
+.hero__buttons-container {
+    margin-top: 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+.hero__button {
+    width: min(80%, 300px);
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid var(--color-9);
+    border-radius: 10px;
+    color: var(--color-9);
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-shadow: var(--text-shadow-d);
+    box-shadow: var(--box-shadow-neon-d);
+    backdrop-filter: blur(15px);
+    transition: transform 0.5s;
+}
+
+.hero__button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.hero__icon {
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+
+/* ====== BUTTON MODIFIER ======= */
+.hero__button--cv {
+    color: var(--color-7);
+    border-color: var(--color-7);
+    text-shadow: var(--text-shadow-c);
+    box-shadow: var(--box-shadow-neon-c);
+}
+
+
+/* ====== ANIMATIONS ============ */
+@keyframes heroNameBlink {
+
+    to {
+        filter: drop-shadow(0 0 15px var(--color-7));
+    }
+}
+
+@keyframes neonTitleFlicker {
+
+    0%, 4%, 10%, 20%, 22%, 60%, 62% {
+        opacity: 1;
+    }
+
+    2%,
+    8%,
+    21%,
+    61% {
+        opacity: 0.3;
+    }
+
+    100% {
+        color: var(--color-4);
+        text-shadow: var(--text-shadow-a);
+    }
+}
+
+
+/* ====== MEDIA QUERIES  ====== */
+
+/* ====== TABLET & DESKTOP ====== */
+@media screen and (min-width: 615px) {
+
+    .hero {
+        border-radius: var(--border-radius-a);
+        box-shadow: 0 0 15px 0 var(--color-6);
+    }
+
+    .hero__layout {
+        flex-direction: row-reverse;
+
+        background: linear-gradient(
+            to left,
+            transparent,
+            var(--color-1-tranparent) 40%
+        );
+
+        border-radius: var(--border-radius-a);
+    }
+
+    .hero__img-container {
+        width: 40%;
+    }
+
+    .hero__self-image {
+        width: clamp(250px, 50%, 800px);
+        padding-right: 10px;
+        margin-top: 130px;
+    }
+
+    .hero__data-container {
+        width: 60%;
+        margin-top: 100px;
+    }
+
+    .hero__name {
+        width: clamp(120px, 70%, 400px);
+    }
+}
+
+
+/* ====== LARGE SCREENS ========= */
+@media screen and (min-width: 990px) {
+
+    .hero__layout {        
+        background: linear-gradient(
+                    to right,
+
+                    transparent 0%,
+                    transparent 1%,
+
+                    var(--color-1-tranparent) 8%,
+                    var(--color-1-tranparent) 60%,
+
+                    transparent 80%,
+                    transparent 100%
+                );
+    }
+}

@@ -1,0 +1,145 @@
+
+/* ---------------------- */
+/* ---- ACERCA DE MI ---- */
+/* ---------------------- */
+
+
+/* ---- CLASES UTILERIA ---- */
+.neon-shadow {
+    box-shadow: var(--box-shadow-neon-a);
+    border-radius: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* ---- RESTO DE LAS CLASES ---- */
+.about {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.about__layout {
+
+    /* 1. Definimos los componentes de la mezcla por separado */
+    background-image: url("../../imagenes/fondo.jpeg");
+    background-color: var(--color-1-tranparent); /* Capa oscura*/
+    
+    /* 2. LA MAGIA: Activamos el modo de fusión moderno */
+    background-blend-mode: multiply; 
+    
+    /* 3. Propiedades de comportamiento y posición de la imagen */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Mantiene su efecto Parallax intacto */
+
+    padding: 25px;
+    border: 2px solid var(--color-4);    
+}
+
+.about__presentation {
+    text-shadow: var(--text-shadow-a);    
+}
+
+.about__title {
+    display: flex;
+    gap: 15px;
+}
+
+.about__description {
+    font-size: 1.3rem;
+    line-height: 1.2;      
+}
+
+.about__details {
+    border: 3px dashed var(--color-4);
+    padding: 25px;
+    height: 100%;
+}
+
+.about__self-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.about__item {
+    font-size: 1.3rem;
+    text-shadow: var(--text-shadow-a);
+}
+
+.about__traits-container {
+    gap: 15px;
+}
+
+.about__trait {
+    gap: 15px;
+    align-items: center;
+    border: 2px solid var(--color-4);
+    padding: 15px;
+    transition: transform 0.5s;
+}
+
+.about__trait i {
+    font-size: 2.1rem;
+    text-shadow: var(--text-shadow-a); 
+    transition: transform 0.5s;
+}
+
+.about__trait-description {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-shadow: var(--text-shadow-a); 
+}
+
+
+/* ---- EFECTOS HOVER ---- */
+.about__presentation:hover, .about__details:hover {
+    animation: neonFlicker 1.5s infinite alternate;
+}
+
+.about__trait:hover {
+    transform: translateY(-5px);
+    animation: neonFlicker 1.5s infinite alternate;
+}
+
+.about__trait:hover i {
+    transform: scale(1.4);
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+@media screen and (min-width: 680px) {
+
+    .about__layout {
+        flex-direction: row;
+    }
+    
+    .about__presentation {
+        width: 35%;
+    }
+
+    .about__details {
+        width: 45%;
+        gap: 25px;
+    }
+
+    .about__traits-container {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    
+    .about__presentation {
+        width: 40%;
+    }
+}
+
+
