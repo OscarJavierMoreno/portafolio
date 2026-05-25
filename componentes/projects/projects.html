@@ -11,7 +11,7 @@
     <div class="flex-column projects__featured-container">
 
         <!-- Titulo e imagen proyecto -->
-        <div class="flex-column project__featured">
+        <div class="flex-column project__viewer">
 
             <h3 class="projects__title title--featured-project">
                 <i class="fa-regular fa-star"></i>
@@ -20,12 +20,22 @@
 
             <img class="project__cover" src="imagenes/proyectos/proyecto-1.png" alt="Lastest Chest">
 
-            <div class="project__buttons-container">
 
+            <div class="project__slider-container">
+
+                <!-- Boton izquierda -->
                 <button class="project__button">
                     <i class="fa-regular fa-circle-left"></i>
                 </button>
 
+                <!-- Indicadores -->
+                <div class="project__indicators">
+                    <span class="project__indicator active"></span>
+                    <span class="project__indicator"></span>
+                    <span class="project__indicator"></span>
+                </div>
+
+                <!-- Boton derecha -->
                 <button class="project__button">
                     <i class="fa-regular fa-circle-right"></i>
                 </button>
@@ -36,13 +46,32 @@
 
 
         <!-- Descripcion y botones -->
-        <div>
+        <div class="flex-column project__info-container">
+            <h2 class="project__title-project">LATEST CHEST</h2>
+
+            <h3 class="project__subtitle">
+                Demo de un vieojuego 3D de acción y aventura
+            </h3>
+
+            <p class="project__description">
+                Demo desarrollada en Unity con C#, sistema de combate, habilidades y entorno visualmente increible. <br>
+                Una experiencia inspirada en el cyberpunk clásico.
+            </p>
+
+            <div class="project__cards-container">
+
+                <span class="project__card">
+                    <i class="devicon-unity-plain"></i>
+                    Unity
+                </span>
+
+            </div>
 
         </div>
 
 
         <!-- Datos curiosos -->
-        <div></div>
+        <div class="project__stats-container"></div>
 
     </div>
 
