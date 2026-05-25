@@ -6,4 +6,5 @@ document.addEventListener('DOMContentLoaded', () =>
   loadComponent('social-networks', 'social-networks');
   loadComponent('about', 'about');
   loadComponent('abilities', 'abilities');
+  loadComponent('projects', 'projects');
 });

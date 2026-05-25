@@ -1,0 +1,14 @@
+
+/* -------------------*/
+/* ---- PROJECTS ---- */
+/* -------------------*/
+
+.projects {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.projects__title {
+    font-size: 2.3rem;
+    text-shadow: var(--text-shadow-b);
+}
