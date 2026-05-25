@@ -58,6 +58,7 @@
 
 .about__details {
     border: 3px dashed var(--color-4);
+    backdrop-filter: blur(15px);
     padding: 25px;
     height: 100%;
 }
@@ -82,6 +83,7 @@
     align-items: center;
     border: 2px solid var(--color-4);
     padding: 15px;
+    backdrop-filter: blur(15px);
     transition: transform 0.5s;
 }
 
