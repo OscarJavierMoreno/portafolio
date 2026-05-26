@@ -1,105 +1,267 @@
 
-<!-- PROYECTOS -->
-<section class="flex-column projects">
+<!-- ====================== -->
+<!-- ==== PROYECTOS ====== -->
+<!-- ====================== -->
 
+<section class="projects">
+
+    <!-- TITULO -->
     <h2 class="projects__title">
-        <i class="fa-regular fa-folder"></i>
+        <i class="fa-solid fa-code"></i>
         PROYECTOS
     </h2>
 
-    <!-- PROYECTOS DESTACADOS -->
-    <div class="flex-column projects__featured-container">
+    <!-- CONTENEDOR -->
+    <div class="projects__container">
 
-        <!-- Titulo e imagen proyecto -->
-        <div class="flex-column project__viewer">
+        <!-- PROYECTO 1 -->
+        <article class="project-card">
 
-            <h3 class="projects__title title--featured-project">
-                <i class="fa-regular fa-star"></i>
-                DESTACADOS
-            </h3>
+            <img 
+                class="project-card__image"
+                src="imagenes/proyectos/proyecto-1.png" 
+                alt="Proyecto 1">
 
-            <img class="project__cover" src="imagenes/proyectos/proyecto-1.png" alt="Lastest Chest">
+            <div class="project-card__content">
 
+                <h3 class="project-card__title">
+                    Lastest Chest
+                </h3>
 
-            <div class="project__slider-container">
+                <p class="project-card__description">
+                    Videojuego de acción y aventura desarrollado en Unity 
+                    con sistema de combate y exploración.
+                </p>
 
-                <!-- Boton izquierda -->
-                <button class="project__button">
-                    <i class="fa-regular fa-circle-left"></i>
-                </button>
+                <!-- TECNOLOGIAS -->
+                <div class="project-card__tags">
 
-                <!-- Indicadores -->
-                <div class="project__indicators">
-                    <span class="project__indicator active"></span>
-                    <span class="project__indicator"></span>
-                    <span class="project__indicator"></span>
+                    <span class="project-card__tag">
+                        Unity
+                    </span>
+
+                    <span class="project-card__tag">
+                        C#
+                    </span>
+
                 </div>
 
-                <!-- Boton derecha -->
-                <button class="project__button">
-                    <i class="fa-regular fa-circle-right"></i>
-                </button>
+                <!-- BOTONES -->
+                <div class="project-card__buttons">
+
+                    <a href="#" class="project-card__button">
+                        Ver Proyecto
+                    </a>
+
+                    <a href="#" class="project-card__button project-card__button--secondary">
+                        Código
+                    </a>
+
+                </div>
 
             </div>
 
-        </div>
+        </article>
 
 
-        <!-- Descripcion y botones -->
-        <div class="flex-column project__info-container">
+        <!-- PROYECTO 2 -->
+        <article class="project-card">
 
-            <h2 class="project__title-project">LATEST CHEST</h2>
+            <img 
+                class="project-card__image"
+                src="imagenes/proyectos/proyecto-2.png" 
+                alt="Proyecto 2">
 
-            <h3 class="project__subtitle">
-                Demo de un vieojuego 3D de acción y aventura
-            </h3>
+            <div class="project-card__content">
 
-            <p class="project__description">
-                Demo desarrollada en Unity con C#, sistema de combate, habilidades y entorno visualmente increible. <br>
-                Una experiencia inspirada en el cyberpunk clásico.
-            </p>
+                <h3 class="project-card__title">
+                    API REST
+                </h3>
 
-            <!-- Sección tarjetas -->
-            <div class="project__cards-container">
-                <span class="project__card">
-                    <i class="devicon-unity-plain"></i>
-                    Unity
-                </span>
+                <p class="project-card__description">
+                    API desarrollada con Spring Boot para gestión de usuarios,
+                    autenticación y base de datos.
+                </p>
 
-                <span class="project__card">
-                    <i class="devicon-csharp-plain"></i>          
-                    C Sharp
-                </span>
+                <div class="project-card__tags">
+
+                    <span class="project-card__tag">
+                        Java
+                    </span>
+
+                    <span class="project-card__tag">
+                        Spring
+                    </span>
+
+                    <span class="project-card__tag">
+                        MySQL
+                    </span>
+
+                </div>
+
+                <div class="project-card__buttons">
+
+                    <a href="#" class="project-card__button">
+                        Ver Proyecto
+                    </a>
+
+                    <a href="#" class="project-card__button project-card__button--secondary">
+                        Código
+                    </a>
+
+                </div>
+
             </div>
 
-            <!-- Botones de visualizacion -->
-            <div class="flex-column project__buttons-show-container">
+        </article>
 
-                <!-- Boton ver proyecto -->
-                <button class="project__button-show">
-                    VER PROYECTO
-                    <i class="fa-solid fa-arrow-right-long project__icon"></i>
-                </button>
 
-                <!-- Boton ver proyecto -->
-                <button class="project__button-show show--button">
-                    VER CODIGO
-                    <i class="devicon-github-original project__icon"></i>
-                </button>
+        <!-- PROYECTO 3 -->
+        <article class="project-card">
+
+            <img 
+                class="project-card__image"
+                src="imagenes/proyectos/proyecto-3.png" 
+                alt="Proyecto 3">
+
+            <div class="project-card__content">
+
+                <h3 class="project-card__title">
+                    Portafolio Web
+                </h3>
+
+                <p class="project-card__description">
+                    Portafolio personal responsive con diseño cyberpunk,
+                    efectos neón y animaciones.
+                </p>
+
+                <div class="project-card__tags">
+
+                    <span class="project-card__tag">
+                        HTML
+                    </span>
+
+                    <span class="project-card__tag">
+                        CSS
+                    </span>
+
+                    <span class="project-card__tag">
+                        JavaScript
+                    </span>
+
+                </div>
+
+                <div class="project-card__buttons">
+
+                    <a href="#" class="project-card__button">
+                        Ver Proyecto
+                    </a>
+
+                    <a href="#" class="project-card__button project-card__button--secondary">
+                        Código
+                    </a>
+
+                </div>
 
             </div>
 
-        </div>
+        </article>
 
 
-        <!-- Datos curiosos -->
-        <div class="project__stats-container"></div>
+        <!-- PROYECTO 4 -->
+        <article class="project-card">
 
-    </div>
+            <img 
+                class="project-card__image"
+                src="imagenes/proyectos/proyecto-4.png" 
+                alt="Proyecto 4">
+
+            <div class="project-card__content">
+
+                <h3 class="project-card__title">
+                    Sistema de Finanzas
+                </h3>
+
+                <p class="project-card__description">
+                    Aplicación para control financiero personal
+                    enfocada en gastos y estadísticas.
+                </p>
+
+                <div class="project-card__tags">
+
+                    <span class="project-card__tag">
+                        Java
+                    </span>
+
+                    <span class="project-card__tag">
+                        SQL
+                    </span>
+
+                </div>
+
+                <div class="project-card__buttons">
+
+                    <a href="#" class="project-card__button">
+                        Ver Proyecto
+                    </a>
+
+                    <a href="#" class="project-card__button project-card__button--secondary">
+                        Código
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
 
 
-    <!-- OTROS PROYECTOS -->
-    <div>
+        <!-- PROYECTO 5 -->
+        <article class="project-card">
+
+            <img 
+                class="project-card__image"
+                src="imagenes/proyectos/proyecto-5.png" 
+                alt="Proyecto 5">
+
+            <div class="project-card__content">
+
+                <h3 class="project-card__title">
+                    Dashboard Administrativo
+                </h3>
+
+                <p class="project-card__description">
+                    Panel administrativo moderno con métricas,
+                    gráficas y gestión de contenido.
+                </p>
+
+                <div class="project-card__tags">
+
+                    <span class="project-card__tag">
+                        JavaScript
+                    </span>
+
+                    <span class="project-card__tag">
+                        CSS
+                    </span>
+
+                </div>
+
+                <div class="project-card__buttons">
+
+                    <a href="#" class="project-card__button">
+                        Ver Proyecto
+                    </a>
+
+                    <a href="#" class="project-card__button project-card__button--secondary">
+                        Código
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
 
     </div>
 

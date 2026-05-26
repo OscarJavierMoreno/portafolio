@@ -7,4 +7,6 @@ document.addEventListener('DOMContentLoaded', () =>
   loadComponent('about', 'about');
   loadComponent('abilities', 'abilities');
   loadComponent('projects', 'projects');
+  loadComponent('experience', 'experience');
+  loadComponent('reflection', 'reflection');
 });

@@ -1,0 +1,166 @@
+
+/* ---------------------- */
+/* ---- EXPERIENCE ------ */
+/* ---------------------- */
+
+.experience {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+
+/* ---- TITULO ---- */
+
+.experience__title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 2rem;
+
+    text-shadow: var(--text-shadow-c);
+}
+
+
+/* ---- TIMELINE ---- */
+
+.experience__timeline {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    position: relative;
+}
+
+
+/* ---- LINEA CENTRAL ---- */
+
+.experience__timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 20px;
+    top: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: var(--color-7);
+
+    box-shadow: 0 0 15px var(--color-7);
+}
+
+
+/* ---- TARJETA ---- */
+
+.experience-card {
+    position: relative;
+
+    margin-left: 50px;
+
+    padding: 20px;
+
+    border: 2px solid var(--color-4);
+    border-radius: 15px;
+
+    background-color: var(--color-1);
+
+    box-shadow: var(--box-shadow-neon-c);
+
+    transition:
+        transform 0.4s,
+        box-shadow 0.4s;
+}
+
+
+/* ---- PUNTO TIMELINE ---- */
+
+.experience-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: -40px;
+    top: 28px;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-7);
+
+    box-shadow:
+        0 0 10px var(--color-7),
+        0 0 20px var(--color-7);
+}
+
+
+/* ---- HOVER ---- */
+
+.experience-card:hover {
+    transform: translateY(-5px);
+
+    animation: neonFlicker 1.5s infinite alternate;
+}
+
+
+/* ---- AÑO ---- */
+
+.experience-card__year {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding: 8px 14px;
+
+    border-radius: 30px;
+
+    border: 2px solid var(--color-6);
+
+    box-shadow: var(--box-shadow-neon-b);
+
+    text-shadow: var(--text-shadow-b);
+
+    font-weight: bold;
+}
+
+
+/* ---- TITULO ---- */
+
+.experience-card__title {
+    font-size: 1.5rem;
+
+    margin-bottom: 15px;
+
+    text-shadow: var(--text-shadow-c);
+}
+
+
+/* ---- DESCRIPCION ---- */
+
+.experience-card__description {
+    line-height: 1.6;
+
+    font-size: 1.05rem;
+}
+
+
+/* ---------------------- */
+/* ---- RESPONSIVE ------ */
+/* ---------------------- */
+
+@media screen and (min-width: 900px) {
+
+    .experience__timeline {
+        gap: 40px;
+    }
+
+    .experience-card {
+        width: 75%;
+    }
+
+}
