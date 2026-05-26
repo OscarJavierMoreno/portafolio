@@ -85,6 +85,10 @@
     text-shadow: var(--text-shadow-d);
     box-shadow: var(--box-shadow-neon-d);
     backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     transition: transform 0.5s;
 }
 
@@ -94,7 +98,6 @@
 }
 
 .hero__icon {
-    margin-left: 20px;
     font-size: 1.2rem;
 }
 
