@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', async () =>
   await loadComponent('experience', 'experience');
   await loadComponent('reflection', 'reflection');
   await loadComponent('contact', 'contact');
+  await loadComponent('footer', 'footer');
 
   initContactForm();
 });

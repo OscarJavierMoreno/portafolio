@@ -1,0 +1,135 @@
+
+/* ------------------ */
+/* ---- FOOTER ---- */
+/* ------------------ */
+.footer
+{
+    margin-top: 50px;
+    padding: 30px 20px;
+    border-top: 2px solid var(--color-4);
+
+    background: linear-gradient(
+        rgba(10, 0, 20, 0.95),
+        rgba(20, 0, 35, 0.98)
+    );
+
+    box-shadow: 
+        0 -5px 20px rgba(255, 0, 255, 0.2);
+
+        border-radius: 15px 15px 0 0;
+}
+
+.footer__layout
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer__brand
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__logo
+{
+    width: 120px;
+    filter: brightness(10) 
+            drop-shadow(0 0 5px var(--color-3))
+            drop-shadow(0 0 10px var(--color-3));
+}
+
+.footer__phrase
+{
+    text-align: center;
+    max-width: 500px;
+
+    font-size: 1rem;
+    line-height: 1.5;
+
+    color: white;
+    text-shadow: var(--text-shadow-a);
+}
+
+.footer__socials
+{
+    display: flex;
+    gap: 20px;
+}
+
+.footer__social-link
+{
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid var(--color-4);
+    border-radius: 50%;
+
+    color: white;
+    font-size: 1.4rem;
+
+    text-decoration: none;
+
+    box-shadow: var(--box-shadow-neon-a);
+
+    transition:
+        transform 0.4s,
+        box-shadow 0.4s;
+}
+
+.footer__social-link:hover
+{
+    transform: translateY(-6px) scale(1.1);
+
+    box-shadow:
+        0 0 10px var(--color-4),
+        0 0 25px var(--color-4),
+        0 0 45px var(--color-4);
+}
+
+.footer__bottom
+{
+    width: 100%;
+    padding-top: 15px;
+
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    text-align: center;
+}
+
+.footer__copyright
+{
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.8);
+
+    text-shadow: var(--text-shadow-a);
+}
+
+
+/* ---------------------- */
+/* ---- MEDIA QUERY ---- */
+/* ---------------------- */
+
+@media screen and (min-width: 768px)
+{
+    .footer__phrase
+    {
+        font-size: 1.1rem;
+    }
+
+    .footer__social-link
+    {
+        width: 60px;
+        height: 60px;
+
+        font-size: 1.5rem;
+    }
+}
