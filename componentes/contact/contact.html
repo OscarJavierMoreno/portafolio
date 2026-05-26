@@ -1,5 +1,4 @@
 
-
 <!-- CONTACTO -->
 <section class="contact">
 
@@ -19,11 +18,12 @@
         </p>
 
         <!-- FORMULARIO -->
-        <form class="contact__form">
+        <form class="contact__form" id="contactForm">
 
             <!-- NOMBRE -->
             <div class="contact__input-container">
-                <label class="contact__label">
+
+                <label class="contact__label" for="name">
                     <i class="fa-regular fa-user"></i>
                     Nombre
                 </label>
@@ -31,13 +31,22 @@
                 <input 
                     type="text"
                     class="contact__input"
+                    id="name"
                     placeholder="Tu nombre..."
                 >
+
+                <!-- ERROR -->
+                <small 
+                    class="contact__error"
+                    id="name-error"
+                ></small>
+
             </div>
 
             <!-- EMAIL -->
             <div class="contact__input-container">
-                <label class="contact__label">
+
+                <label class="contact__label" for="email">
                     <i class="fa-regular fa-envelope"></i>
                     Correo
                 </label>
@@ -45,27 +54,46 @@
                 <input 
                     type="email"
                     class="contact__input"
+                    id="email"
                     placeholder="correo@gmail.com"
                 >
+
+                <!-- ERROR -->
+                <small 
+                    class="contact__error"
+                    id="email-error"
+                ></small>
+
             </div>
 
             <!-- MENSAJE -->
             <div class="contact__input-container">
-                <label class="contact__label">
+
+                <label class="contact__label" for="message">
                     <i class="fa-regular fa-comment"></i>
                     Mensaje
                 </label>
 
                 <textarea 
                     class="contact__textarea"
+                    id="message"
                     placeholder="Escribe tu mensaje..."
                 ></textarea>
+
+                <!-- ERROR -->
+                <small 
+                    class="contact__error"
+                    id="message-error"
+                ></small>
+
             </div>
 
             <!-- BOTON -->
-            <button class="contact__button">
+            <button class="contact__button" type="submit">
+
                 <i class="fa-solid fa-paper-plane"></i>
                 ENVIAR MENSAJE
+
             </button>
 
         </form>

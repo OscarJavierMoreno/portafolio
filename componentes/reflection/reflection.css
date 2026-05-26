@@ -4,8 +4,9 @@
 /* ---------------------- */
 
 .reflection {
-    margin-top: 30px;
+    margin: 30px auto;
     padding: 10px;
+    max-width: 1000px;
 }
 
 .reflection__layout {
@@ -28,7 +29,7 @@
     align-items: center;
     gap: 15px;
 
-    font-size: 2rem;
+    font-size: 1.4rem;
 
     text-shadow: var(--text-shadow-b);
 }
@@ -104,6 +105,9 @@
 /* ---------------------- */
 
 @media screen and (min-width: 768px) {
+    .reflection__title {
+        font-size: 2rem;
+    }
 
     .reflection__layout {
         padding: 40px;
