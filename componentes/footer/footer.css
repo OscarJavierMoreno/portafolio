@@ -6,17 +6,14 @@
 {
     margin-top: 50px;
     padding: 30px 20px;
-    border-top: 2px solid var(--color-4);
+    border: 2px solid var(--color-4);
 
     background: linear-gradient(
         rgba(10, 0, 20, 0.95),
         rgba(20, 0, 35, 0.98)
     );
-
-    box-shadow: 
-        0 -5px 20px rgba(255, 0, 255, 0.2);
-
-        border-radius: 15px 15px 0 0;
+    box-shadow: var(--box-shadow-neon-a);
+    border-radius: 15px 15px 0 0;
 }
 
 .footer__layout
@@ -83,6 +80,8 @@
     transition:
         transform 0.4s,
         box-shadow 0.4s;
+
+    text-shadow: var(--text-shadow-a);
 }
 
 .footer__social-link:hover

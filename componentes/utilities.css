@@ -9,6 +9,10 @@
     align-items: center;
 }
 
+.scroll-margin {
+    scroll-margin-top: 110px;
+}
+
 
 /* ---- ANIMACIONES ---- */
 @keyframes neonFlicker {
