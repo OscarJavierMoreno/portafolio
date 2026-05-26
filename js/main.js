@@ -9,4 +9,5 @@ document.addEventListener('DOMContentLoaded', () =>
   loadComponent('projects', 'projects');
   loadComponent('experience', 'experience');
   loadComponent('reflection', 'reflection');
+  loadComponent('contact', 'contact');
 });
