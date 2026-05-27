@@ -28,4 +28,36 @@ document.addEventListener('DOMContentLoaded', async () =>
   await loadComponent('footer', 'footer');
 
   initContactForm();
+
+  // ACTIVAR SCROLL SUAVE
+  initSmoothScroll();
 });
+
+
+function initSmoothScroll()
+{
+  const links = document.querySelectorAll('a[href^="#"]');
+
+  links.forEach(link =>
+  {
+    link.addEventListener('click', (e) =>
+    {
+      e.preventDefault();
+
+      const id = link.getAttribute('href');
+
+      if(id === '#') return;
+
+      const section = document.querySelector(id);
+
+      if(section)
+      {
+        section.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+      
+    });
+  });
+}
+
