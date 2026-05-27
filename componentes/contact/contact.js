@@ -47,7 +47,7 @@ function initContactForm()
         // MENSAJE
         if(messageInput.value.trim() === '')
         {
-            messageError.textContent = 'Escribe un mensaje';
+            messageError.textContent = '*Escribe un mensaje';
             valid = false;
         }
 

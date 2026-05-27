@@ -47,8 +47,6 @@
 
 .project-card:hover {
     transform: translateY(-7px);
-
-    animation: neonFlicker 1.5s infinite alternate;
 }
 
 

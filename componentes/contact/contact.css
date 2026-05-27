@@ -84,6 +84,7 @@
     font-weight: bold;
 
     text-shadow: var(--text-shadow-b);
+    padding-left: 10px;
 }
 
 /* ---- INPUTS ---- */
