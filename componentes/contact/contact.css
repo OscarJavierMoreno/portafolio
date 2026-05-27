@@ -15,13 +15,6 @@
     border-radius: 15px;
     padding: 25px;
     box-shadow: var(--box-shadow-neon-b);
-
-    background:
-        linear-gradient(
-            rgba(15, 0, 24, 0.92),
-            rgba(15, 0, 24, 0.92)
-        ),
-        url("/imagenes/fondo.jpeg") center / cover fixed;
 }
 
 /* ---- TITULO ---- */

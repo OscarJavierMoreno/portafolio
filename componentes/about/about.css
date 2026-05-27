@@ -27,7 +27,7 @@
 .about__layout {
 
     /* 1. Definimos los componentes de la mezcla por separado */
-    background-image: url("../../imagenes/fondo.jpeg");
+    background-image: url("../../imagenes/fondo.webp");
     background-color: var(--color-1-tranparent); /* Capa oscura*/
     
     /* 2. LA MAGIA: Activamos el modo de fusión moderno */

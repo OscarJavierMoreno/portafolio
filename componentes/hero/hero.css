@@ -3,7 +3,7 @@
 /* ====== HERO ========== */
 /* ====================== */
 .hero {
-    background: url("../../imagenes/fondo.jpeg") center / cover fixed;
+    background: url("../../imagenes/fondo.webp") center / cover fixed;
 }
 
 .hero__layout {

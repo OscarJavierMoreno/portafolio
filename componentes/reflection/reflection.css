@@ -19,7 +19,7 @@
         rgba(15, 0, 24, 0.90),
         rgba(15, 0, 24, 0.90)
     ),
-    url("/imagenes/fondo.jpeg") center / cover fixed;
+    url("/imagenes/fondo.webp") center / cover fixed;
 
     box-shadow: var(--box-shadow-neon-b);
 }
