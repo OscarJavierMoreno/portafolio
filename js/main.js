@@ -37,28 +37,36 @@ document.addEventListener('DOMContentLoaded', async () =>
 
 function initSmoothScroll()
 {
-  const links = document.querySelectorAll('a[href^="#"]');
+    const links = document.querySelectorAll('a[href^="#"]');
 
-  links.forEach(link =>
-  {
-    link.addEventListener('click', (e) =>
+    links.forEach(link =>
     {
-      e.preventDefault();
+        link.addEventListener('click', (e) =>
+        {
+            e.preventDefault();
 
-      const id = link.getAttribute('href');
+            const id = link.getAttribute('href');
 
-      if(id === '#') return;
+            // IR AL INICIO
+            if(id === '#')
+            {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
 
-      const section = document.querySelector(id);
+                return;
+            }
 
-      if(section)
-      {
-        section.scrollIntoView({
-          behavior: 'smooth'
+            const section = document.querySelector(id);
+
+            if(section)
+            {
+                section.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
-      }
-      
     });
-  });
 }
 
