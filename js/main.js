@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', async () =>
   await loadComponent('footer', 'footer');
 
   initContactForm();
+  initMobileMenu();
 
   // ACTIVAR SCROLL SUAVE
   initSmoothScroll();

@@ -116,3 +116,89 @@
     }
 }
 
+
+/* -------------------------------- */
+/* ---- MENU MOBILE DESPLEGABLE --- */
+/* -------------------------------- */
+
+.mobile-menu {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 2px solid var(--color-6);
+    box-shadow: var(--box-shadow-neon-b);
+
+    transform: translateX(150%);
+    transition: transform 0.3s ease;
+    padding-bottom: 50px;
+
+    z-index: 1;
+}
+
+/* MENU ACTIVO */
+.mobile-menu--active {
+    transform: translateX(0);
+}
+
+.mobile-menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.mobile-menu__link {
+    color: var(--color-4);
+    text-decoration: none;
+
+    font-size: 1.3rem;
+    text-shadow: var(--text-shadow-a);
+
+    transition: 0.3s;
+}
+
+.mobile-menu__link:hover {
+    color: var(--color-8);
+    padding-left: 10px;
+}
+
+/* REDES */
+.mobile-menu__socials {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.mobile-menu__socials a {
+    color: var(--color-4);
+    font-size: 2rem;
+
+    text-shadow: var(--text-shadow-b);
+
+    transition: transform 0.3s;
+}
+
+.mobile-menu__socials a:hover {
+    transform: scale(1.2);
+}
+
+
+/* OCULTAR MENU MOBILE EN PC */
+@media screen and (min-width: 970px) {
+
+    .mobile-menu {
+        display: none;
+    }
+}
+
