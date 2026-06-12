@@ -1,0 +1,188 @@
+
+/* -------------------*/
+/* ---- PROJECTS ---- */
+/* -------------------*/
+
+.projects {
+    margin-top: 30px;
+    padding: 10px;
+    gap: 20px;
+}
+
+.projects__title {
+    font-size: 2.1rem;
+    text-shadow: var(--text-shadow-b);
+    display: flex;
+    gap: 15px;
+}
+
+/* ---- PROYECTOS DETACADOS ---- */
+.projects__featured-container {
+    border: 3px dashed var(--color-4);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-neon-b);
+}
+
+.title--featured-project {
+    font-size: 1.1rem;
+    gap: 10px;
+    border: 2px solid var(--color-14);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.project__viewer {
+    gap: 15px;
+}
+
+.project__cover {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--color-4);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-neon-b);
+}
+
+.project__slider-container {
+    width: min(350px, 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project__indicators {
+    display: flex;
+    gap: 10px;
+}
+
+.project__indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--color-4);
+    box-shadow: 0 0 10px var(--color-4);
+    transition: all 0.4s;
+}
+
+.active {
+    background-color: var(--color-14);
+    box-shadow: var(--box-shadow-neon-b);
+}
+
+.project__button {
+    background-color: transparent;
+    border: none;
+    color: var(--color-4);
+    font-size: 2.6rem;
+    text-shadow: var(--text-shadow-b);
+    transition: transform 0.5s;
+}
+
+.project__info-container {
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.project__title-project {
+    text-shadow: var(--text-shadow-b);
+    font-size: 1.8rem;
+}
+
+.project__subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: var(--text-shadow-h);
+}
+
+.project__description {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.project__cards-container {
+    align-self: start;
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.project__card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.3rem;
+    border: 2px solid var(--color-4);
+    padding: 7px 12px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-neon-b);
+    text-shadow: var(--text-shadow-b);
+}
+
+.project__buttons-show-container {
+    margin-top: 20px;
+    gap: 15px;
+    width: 100%;
+}
+
+.project__button-show {
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid var(--color-9);
+    border-radius: 10px;
+    color: var(--color-9);
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-shadow: var(--text-shadow-d);
+    box-shadow: var(--box-shadow-neon-d);
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.5s;
+}
+
+.show--button {
+    border: 2px solid var(--color-7);
+    box-shadow: var(--box-shadow-neon-c);
+    color: var(--color-7);
+    text-shadow: var(--text-shadow-c);
+
+}
+
+.project__icon {
+    font-size: 1.5rem;
+}
+
+
+/* ---- EFECTOS HOVER DE PROYECTOS DETACADOS ---- */
+.project__button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.project__button-show:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+@media screen and (min-width: 650px) {
+    .projects__featured-container {
+        flex-direction: row;
+        gap: 25px;
+    }
+    
+    .project__viewer {
+        width: 60%;
+    }
+
+    .project__info-container {
+        width: 40%;
+    }
+}
