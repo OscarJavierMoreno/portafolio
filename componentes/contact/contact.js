@@ -15,23 +15,21 @@ function initContactForm()
 
     form.addEventListener('submit', (e) =>
     {
-        e.preventDefault();
-
         let valid = true;
 
-        // LIMPIAR ERRORES
+        //LIMPIAR ERRORES
         nameError.textContent = '';
         emailError.textContent = '';
         messageError.textContent = '';
 
-        // NOMBRE
+        //VALIDAR NOMBRE
         if(nameInput.value.trim() === '')
         {
             nameError.textContent = '*Ingresa tu nombre';
             valid = false;
         }
 
-        // EMAIL
+        //VALIDAR EMAIL
         if(emailInput.value.trim() === '')
         {
             emailError.textContent = '*Ingresa tu correo';
@@ -44,18 +42,19 @@ function initContactForm()
             valid = false;
         }
 
-        // MENSAJE
+        //VALIDAR MENSAJE
         if(messageInput.value.trim() === '')
         {
             messageError.textContent = '*Escribe un mensaje';
             valid = false;
         }
 
-        // TODO OK
-        if(valid)
+        //SI HAY ERRORES, FRENAREMOS EL ENVÍO
+        if(!valid)
         {
-            alert('Mensaje enviado 🚀');
-            form.reset();
+            e.preventDefault();
         }
+        
+        //Si valid es true, NO llamamos a preventDefault y los datos viajan directo a Formspree
     });
 }
