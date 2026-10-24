@@ -21,7 +21,6 @@
 
 .projects__container {
     margin-top: 25px;
-
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
@@ -123,17 +122,13 @@
 
 .project-card__button {
     text-decoration: none;
-
     padding: 12px 18px;
-
     border-radius: 10px;
-
     border: 2px solid var(--color-9);
-
-    color: var(--color-4);
-
+    background-color: var(--color-4);
+    color: var(--color-1);
+    font-weight: bold;
     box-shadow: var(--box-shadow-neon-d);
-
     text-shadow: var(--text-shadow-d);
 
     transition:
